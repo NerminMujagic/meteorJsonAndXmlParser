@@ -1,0 +1,38 @@
+<template name="dataGrid">
+    <div class="row">
+        <table class="table text-left">
+        <thead>
+        <tr>
+            <th> Resort Name</th>
+            <th> Resort Open</th>
+            <th> Last Snow Date</th>
+            <th> Last Snow Cm</th>
+            <th> LiftsTotal Nr.Open</th>
+            <th> Slopes Total Nr.Open</th>
+            <th> Slope Valley Open</th>
+            <th> Slopes Condition</th>
+            <th> Date</th>
+            <th> Snow Depth Base Cm</th>
+            <th> Snow Depth Top Cm</th>
+        </tr>
+        </thead>
+        <tbody>
+            {{#each reports}}
+                <tr data-id="{{_id}}">
+                    <td>{{resortName}}</td>
+                    <td>{{snowReportResortOpen}}</td>
+                    <td>{{snowReportLastSnowDate}}</td>
+                    <td>{{snowReportLastSnowCm}}</td>
+                    <td>{{snowReportLiftsTotalNrOpen}}</td>
+                    <td>{{snowReportSlopesTotalNrOpen}}</td>
+                    <td>{{snowReportSlopeValleyOpen}}</td>
+                    <td>{{snowReportSlopesCondition}}</td>
+                    <td>{{snowReportDate}}</td>
+                    <td>{{snowReportSnowDepthBaseCm}}</td>
+                    <td>{{snowReportSnowDepthTopCm}}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    </div>
+</template>

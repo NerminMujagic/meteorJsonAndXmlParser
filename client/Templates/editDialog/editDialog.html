@@ -1,0 +1,66 @@
+<template name="dataModal">
+  <div class="modal fade" id="dataModal" role="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Edit Report</h4>
+        </div>
+        <div class="modal-body">
+            <div class="input-group">
+                <span class="input-group-addon">Resort Name</span>
+                <input value="{{report.resortName}}" id="resortName" type="text" class="form-control" >
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">Resort ID</span>
+                <input value="{{report.snowResortId}}" id="snowResortId" type="text" class="form-control">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">Resort Open</span>
+                <input value="{{report.snowReportResortOpen}}" id="snowReportResortOpen" type="text" class="form-control" >
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">Last Snow Date</span>
+                <input value="{{report.snowReportLastSnowDate}}" id="snowReportLastSnowDate" type="text" class="form-control" >
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">Last Snow Cm</span>
+                <input value="{{report.snowReportLastSnowCm}}" id="snowReportLastSnowCm" type="text" class="form-control"  >
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">Lifts Total Nr Open</span>
+                <input value="{{report.snowReportLiftsTotalNrOpen}}" id="snowReportLiftsTotalNrOpen" type="text" class="form-control" >
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">Slopes Total Nr Open</span>
+                <input value="{{report.snowReportSlopesTotalNrOpen}}" id="snowReportSlopesTotalNrOpen" type="text" class="form-control" >
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">Slope Valley Open</span>
+                <input value="{{report.snowReportSlopeValleyOpen}}" id="snowReportSlopeValleyOpen" type="text" class="form-control"  >
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">Slopes Condition</span>
+                <input value="{{report.snowReportSlopesCondition}}" id="snowReportSlopesCondition" type="text" class="form-control" >
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">Snow Report Date</span>
+                <input value="{{report.snowReportDate}}" id="snowReportDate" type="text" class="form-control">
+            </div> 
+            <div class="input-group">
+                <span class="input-group-addon">Snow Depth Base Cm</span>
+                <input value="{{report.snowReportSnowDepthBaseCm}}" id="snowReportSnowDepthBaseCm" type="text" class="form-control">
+            </div> 
+            <div class="input-group">
+                <span class="input-group-addon">Snow Depth Top Cm</span>
+                <input value="{{report.snowReportSnowDepthTopCm}}" id="snowReportSnowDepthTopCm" type="text" class="form-control" >
+            </div>                                                                                     
+        </div>
+        <div class="modal-footer">
+          <button id="delete" type="button" class="btn btn-warning" data-dismiss="modal">Delete</button>
+          <button id="save" type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+          <button id="close" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+     </div>
+      </div>
+    </div>
+  </div>
+</template>
